@@ -1,0 +1,50 @@
+.header
+{
+    width: 100%;
+    position: relative;
+}
+nav
+{
+    padding: 2% 6%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightcoral;
+}
+.nav-links
+{
+    flex:1;
+    text-align: right;
+}
+.logo
+{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 24px;
+    color:#fff; 
+}
+.nav-links ul li
+{
+    list-style: none;
+    position: relative;
+    display:inline-block;
+    padding: 2px 16px;
+}
+.nav-links ul li a
+{
+    color:#fff;
+    font-weight: 600;
+}
+.nav-links ul li a::after
+{
+    content :'';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display:block;
+    transition: 0.5s;
+}
+.nav-links ul li a:hover::after
+{
+    width: 100%;
+}
